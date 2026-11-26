@@ -1,0 +1,31 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "root=$(git rev-parse --show-toplevel) && node \"$root/.codex/hooks/qa.mjs\"",
+            "commandWindows": "$qaRoot = git rev-parse --show-toplevel; if ($LASTEXITCODE -eq 0) { node (Join-Path $qaRoot \".codex/hooks/qa.mjs\") }",
+            "timeout": 5,
+            "statusMessage": "Cargando guía de pruebas"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "^Bash$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "root=$(git rev-parse --show-toplevel) && node \"$root/.codex/hooks/qa.mjs\"",
+            "commandWindows": "$qaRoot = git rev-parse --show-toplevel; if ($LASTEXITCODE -eq 0) { node (Join-Path $qaRoot \".codex/hooks/qa.mjs\") }",
+            "timeout": 5,
+            "statusMessage": "Revisando ejecución de pruebas"
+          }
+        ]
+      }
+    ]
+  }
+}

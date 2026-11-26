@@ -4,7 +4,7 @@ Este proyecto es una inicialización base que integra Cypress con BDD (Cucumber)
 
 ## Requisitos
 
-- Node.js (v18+)
+- Node.js 24.
 
 ## Instalación
 
@@ -81,3 +81,7 @@ Combining these specific technologies creates a highly efficient, scalable, and 
 **5. Allure Report (Advanced Test Reporting)**
 *   **Advantage:** Standard test outputs can be hard to interpret, especially when a suite grows. `allure-cypress` generates highly visual, detailed, and interactive HTML reports.
 *   **Visibility:** It provides a clear dashboard showing test pass rates, execution times, and historical trends. When a test fails, Allure can easily attach screenshots, videos, and detailed logs directly to the specific failed step in the report, making debugging significantly easier.
+
+## Automatización asistida por IA
+
+La [guía de pruebas](docs/qa.md) reúne las prácticas ISTQB de diseño y gestión de riesgos, las skills de Codex y los hooks para orientar el diagnóstico. Ejecuta `npm run qa:check` para validar Gherkin y trazabilidad o `npm run qa:triage` después de una ejecución con resultados Allure.
