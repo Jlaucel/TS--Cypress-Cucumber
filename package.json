@@ -5,7 +5,9 @@
   "scripts": {
     "test": "cypress run",
     "cypress:open": "cypress open",
-    "report": "allure serve allure-results"
+    "report": "allure serve allure-results",
+    "qa:check": "node scripts/qa/check.mjs",
+    "qa:triage": "node scripts/qa/triage.mjs"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,8 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^24.0.1",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "@cucumber/gherkin": "38.0.0",
+    "@cucumber/messages": "32.3.1",
     "allure-commandline": "^2.38.1",
     "allure-cypress": "^3.7.1",
     "cypress": "^15.14.0",
