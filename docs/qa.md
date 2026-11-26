@@ -25,6 +25,8 @@ Abre el proyecto en Codex y revisa `.codex/hooks.json` antes de aprobar sus hook
 
 Revisa manualmente los escenarios, selectores y conclusiones sugeridos por IA. Comparte datos mínimos y elimina secretos y datos personales. El estado de CI se determina por verificaciones reproducibles.
 
+Cuando el diseño, los criterios o las ejecuciones se gestionen en Figma, Jira, Zephyr o Slack, usa la [guía de conexiones](integraciones-qa.md) para consultar los datos autorizados y registrar la trazabilidad.
+
 ## Registro de defecto
 
 Incluye título, commit y entorno, caso y criterio asociado, pasos y datos reproducibles, resultado esperado y observado, frecuencia, severidad, prioridad y evidencia revisada. Indica si la causa sigue abierta y qué prueba podría confirmarla.

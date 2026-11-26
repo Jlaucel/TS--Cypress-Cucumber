@@ -85,3 +85,7 @@ Combining these specific technologies creates a highly efficient, scalable, and 
 ## Automatización asistida por IA
 
 La [guía de pruebas](docs/qa.md) reúne las prácticas ISTQB de diseño y gestión de riesgos, las skills de Codex y los hooks para orientar el diagnóstico. Ejecuta `npm run qa:check` para validar Gherkin y trazabilidad o `npm run qa:triage` después de una ejecución con resultados Allure.
+
+## Conexiones con herramientas de QA
+
+La [guía de conexiones](docs/integraciones-qa.md) explica cómo configurar Figma, Jira, Zephyr y Slack desde tu cliente de IA y cómo usar la skill de QA del repositorio para relacionar requisitos, pruebas y evidencias.
